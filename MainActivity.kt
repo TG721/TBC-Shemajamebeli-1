@@ -1,3 +1,4 @@
+
 class MathFunctions(){
 
     fun  largestCommonDivider(x: Int, y: Int): Int  {
@@ -49,13 +50,24 @@ class MathFunctions(){
     }
 
 
+    fun checkPalindromeString(a: String): String {
+        val temp = StringBuilder(a)
+
+
+        val reversed = temp.reverse().toString()
+
+
+        return if (a.equals(reversed, ignoreCase = true)) "Input string is Palindrome"
+        else "Input string is not Palindrome"
+    }
 
 }
 
 fun main()
 {
-    
+
 }
+
 
 
 
