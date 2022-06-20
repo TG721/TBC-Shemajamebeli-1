@@ -44,14 +44,20 @@ class MathFunctions(){
         return sum
     }
 
+    fun convertToNumber(number: String): Int {
+        return  number.reversed().toInt()
+    }
+
 
 
 }
 
-
-fun main(){
-
+fun main()
+{
+    
 }
+
+
 
 
 
