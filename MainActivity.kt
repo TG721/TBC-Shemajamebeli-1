@@ -16,7 +16,7 @@ class MathFunctions(){
 
     fun leastCommonMultiple(x: Int, y: Int): Int
     {
-        
+
         var lcm = if(x>y) x else y
 
         while(true){
@@ -26,6 +26,14 @@ class MathFunctions(){
             lcm++
         }
         return lcm
+
+    }
+
+    fun checkString(a: String): String{
+        if (a.contains('$'))
+            return "Yes, String contains $"
+        else return "No, String does not contain $"
+
 
     }
 
