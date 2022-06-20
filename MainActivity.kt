@@ -33,9 +33,18 @@ class MathFunctions(){
         if (a.contains('$'))
             return "Yes, String contains $"
         else return "No, String does not contain $"
-
-
     }
+
+    //pass 100 as parameter
+    fun recursiveCalculate(n: Int): Int {
+
+        if (n == 0) return 0
+        var sum = recursiveCalculate(n - 1)
+        if (n % 2 == 0) sum += n
+        return sum
+    }
+
+
 
 }
 
@@ -43,4 +52,6 @@ class MathFunctions(){
 fun main(){
 
 }
+
+
 
